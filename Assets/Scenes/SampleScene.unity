@@ -948,10 +948,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 7473804258512387735, guid: 92ad6c7ed97fe1d4687c5fd0da3e049b, type: 3}
   spawnPoint: {fileID: 1844191253}
-  waves: 01000000050000000a0000000f00000014000000190000001e00000023000000280000002d00000032000000
+  waves: 0100000005000000060000000a0000000b0000000f000000100000001400000015000000190000001a0000001e0000001f000000230000002400000028000000290000002d000000320000003300000037000000380000003c0000003d00000041000000
   _timeBetweenWaves: 15
   waveTimer: {fileID: 706067226}
-  _timeBetweenEnemies: 1
+  _timeBetweenEnemies: 0.9
 --- !u!4 &69018178
 Transform:
   m_ObjectHideFlags: 0
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8bf0faa09d0268438bcde2d3ed5869c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startMoney: 500
-  _startHealth: 1
+  _startMoney: 250
+  _startHealth: 100
 --- !u!114 &69018181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69018176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a4c86ce7bbb8d446a1d6238a248c03e, type: 3}
   m_Name: 
