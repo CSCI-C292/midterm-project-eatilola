@@ -15,6 +15,7 @@ public class Node : MonoBehaviour
     private Color strtColor;
     public string grassTag = "Grass";
 
+
     private SpriteRenderer rend;
     BuildManager buildManager;
     void Start()
@@ -47,7 +48,6 @@ public class Node : MonoBehaviour
 
         if (tower != null){
             buildManager.SelectedTower(this);
-            //Debug.Log("" + this);
             return;
         }
 
@@ -91,6 +91,16 @@ public class Node : MonoBehaviour
 
         isUpgraded = true;
         Debug.Log("Tower Has Been Upraded, You have "+"$"+PlayerStats._currency+" Left");
+    }
+
+
+    public void SellTower()
+    {
+        PlayerStats._currency += towerBlueprint.GetSellAmount();
+        Destroy(tower);
+        isUpgraded = false;
+        towerBlueprint = null;
+
     }
     void OnMouseEnter()
     {

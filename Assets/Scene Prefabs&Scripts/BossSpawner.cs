@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-public class WaveSpawner : MonoBehaviour
+public class BossSpawner : MonoBehaviour
 {
-    public Transform _enemyPrefab;
+    public Transform _bossPrefab;
 
     public Transform spawnPoint;
 
@@ -12,7 +12,7 @@ public class WaveSpawner : MonoBehaviour
     public float _timeBetweenWaves = 5.5f;
     private float _spawnTime = 2f;
 
-    public Text waveTimer;
+    //public Text BossTimer;
     private int _waveNumber = 0;
 
     [SerializeField] float _timeBetweenEnemies = 1f;
@@ -31,7 +31,7 @@ public class WaveSpawner : MonoBehaviour
         }
         _spawnTime -= Time.deltaTime;
 
-        waveTimer.text = Mathf.Round(_spawnTime).ToString();
+        //waveTimer.text = Mathf.Round(_spawnTime).ToString();
     }
 
     IEnumerator SpawnEnemyWave()
@@ -45,13 +45,13 @@ public class WaveSpawner : MonoBehaviour
         }
 
         _waveNumber++;
-        PlayerStats._rounds++;
+        //PlayerStats._rounds++;
         
     }
 
     void SpawnEnemy()
     {
-        Instantiate(_enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(_bossPrefab, spawnPoint.position, spawnPoint.rotation);
        
     }
     

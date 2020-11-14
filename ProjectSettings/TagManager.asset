@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy1
   - Grass
+  - Boss1
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,8 @@ public class TurretTower2 : MonoBehaviour
     [Header("Setup Fields")]
     public string enemyTag = "Enemy1";
 
+    public string bossTag = "Boss1";
+
     public GameObject _bulletfab;
     public Transform firepoint;
     public Transform firepoint2;
@@ -29,8 +31,13 @@ public class TurretTower2 : MonoBehaviour
     {
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        //GameObject[] boss = GameObject.FindGameObjectsWithTag(bossTag);
         float shortestDist = Mathf.Infinity;
         GameObject nearestEnemy = null;
+        
+        /*if (GameObject.FindGameObjectsWithTag(enemyTag) = "Enemy1"){
+
+        }*/
 
         if (enemies.Length > 0){
             foreach (GameObject Enemy1 in enemies){
@@ -40,7 +47,6 @@ public class TurretTower2 : MonoBehaviour
                     nearestEnemy = Enemy1;
                 } 
             }
-
             if( nearestEnemy != null && shortestDist <= _range)
             _target = nearestEnemy.transform;
             if(shortestDist > _range)
@@ -48,11 +54,30 @@ public class TurretTower2 : MonoBehaviour
                 _target = null;
             }
         }
-
         else{
             _target = null;
         }
-        
+
+         /*if (boss.Length > 0){
+            foreach (GameObject Boss1 in boss){
+                float distanceToEnemy = Vector3.Distance(transform.position, Boss1.transform.position);
+                if(distanceToEnemy < shortestDist){
+                    shortestDist = distanceToEnemy;
+                    nearestEnemy = Boss1;
+                } 
+            }
+            
+            if( nearestEnemy != null && shortestDist <= _range)
+            _target = nearestEnemy.transform;
+            if(shortestDist > _range)
+            {
+                _target = null;
+            }
+        }
+        else{
+            _target = null;
+        }
+        */
     
        
     }

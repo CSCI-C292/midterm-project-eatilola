@@ -1,25 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float _speed = 0.1f;
-    public int _health = 100;
+    private float _health ;
+
+    public float _startHealth = 100f;
 
     public int _value = 50;
 
     private Transform _target;
 
     private int wavepointIndex = 0;
+
+    public Image healthBar;
     void Start()
     {
         _target = Waypoints.wayPoints[0];
+        _health = _startHealth;
     }
 
     public void TakeDamage(int amount)
     {
         _health -= amount;
+
+        healthBar.fillAmount = _health / _startHealth;
 
         if(_health <= 0){ 
 

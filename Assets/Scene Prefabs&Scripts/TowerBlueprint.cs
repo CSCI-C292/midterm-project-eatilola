@@ -10,15 +10,14 @@ public class TowerBlueprint
 
     public GameObject _upgradedTowerPrefab;
     public int _upgradeCost;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public int _sellCost;
+
+    public int GetSellAmount()
     {
+
         
+            _sellCost = (_cost / 2);
+           return _sellCost;
     }
 }
