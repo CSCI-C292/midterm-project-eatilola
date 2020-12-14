@@ -33,6 +33,7 @@ public class Rocket : MonoBehaviour
 
         if(dir.magnitude <= distInFrame){
             Hit(_target);
+            Destroy(gameObject);
             return;
         }
 

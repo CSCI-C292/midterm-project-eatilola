@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3659e4a318cbe2e4ca8f325978eae034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _range: 4
+  _range: 2.5
   fireRate: 0.3
   _turnSpeed: 10
   enemyTag: Enemy1
+  bossTag: Boss1
   _rocketfab: {fileID: 5027206112039632861, guid: 5693d956bf0854f44860d7dfe15fa67c, type: 3}
   firepoint: {fileID: 8134521505483697530}
 --- !u!1 &1910069078897852980

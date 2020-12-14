@@ -94,9 +94,10 @@ GameObject:
   - component: {fileID: 5132605632352878518}
   - component: {fileID: 2846619417874615464}
   - component: {fileID: 8999216139370456546}
+  - component: {fileID: 6386658152660437038}
   m_Layer: 0
-  m_Name: Boss
-  m_TagString: Boss1
+  m_Name: King
+  m_TagString: Enemy1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,9 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f3d778972d7eb468231c2899de81c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _strtSpeed: 0.48
   _speed: 0.56
-  _startHealth: 2500
-  _value: 1000
+  _startHealth: 3500
+  _value: 750
   healthBar: {fileID: 6678762061300006293}
 --- !u!61 &8999216139370456546
 BoxCollider2D:
@@ -210,6 +212,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38, y: 0.46}
   m_EdgeRadius: 0
+--- !u!114 &6386658152660437038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223776403491681951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5dc1783d0406649b266e59feef1c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6678762061300006292
 GameObject:
   m_ObjectHideFlags: 0

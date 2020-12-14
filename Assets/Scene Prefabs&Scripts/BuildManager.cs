@@ -12,11 +12,6 @@ public class BuildManager : MonoBehaviour
         }
         instance = this;
     }
-
-    public GameObject SoldierTower1Prefab;
-    public GameObject TurretTower1Prefab;
-    public GameObject TurretTower2Prefab;
-    
     private TowerBlueprint towerToBuild;
     private Node selectedTower;
     public NodeUI nodeUI;

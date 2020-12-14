@@ -1,17 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public Text roundsText;
-
-    void OnEnable()
-    {
-        roundsText.text = PlayerStats._rounds.ToString();
-    }
 
     public void PlayAgain()
     {
@@ -20,6 +13,6 @@ public class GameOver : MonoBehaviour
 
     public void MainMenu()
     {
-        Debug.Log("Gone to Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -5,6 +5,11 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _enemyPrefab: {fileID: 7473804258512387735, guid: 92ad6c7ed97fe1d4687c5fd0da3e049b, type: 3}
+  - _enemy2Prefab: {fileID: 7473804258512387735, guid: 042a1bba822db10459e0a40ed33840ff, type: 3}
+  - _enemy3Prefab: {fileID: 7473804258512387735, guid: a324f5ac93527af40b711b8b7b1103cc, type: 3}
+  - _enemy4Prefab: {fileID: 7473804258512387735, guid: a052e08a845efe7408ee62c56793709b, type: 3}
+  - spawnPoint: {instanceID: 0}
+  - waveTimer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -26,7 +26,7 @@ public class NodeUI : MonoBehaviour
         }
         else{
             _upgradeCost.text = "Tower Maxed!";
-            return;
+           
         }
 
         _sellAmount.text = "$" +  target.towerBlueprint.GetSellAmount();

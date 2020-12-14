@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour
 {
     private bool gameEnded;
     public GameObject gameOverUI;
+    public GameObject completeLevelUI;
 
     void Start()
     {
@@ -26,5 +27,11 @@ public class GameMaster : MonoBehaviour
     {
         gameEnded = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        gameEnded = true;
+        completeLevelUI.SetActive(true);
     }
 }

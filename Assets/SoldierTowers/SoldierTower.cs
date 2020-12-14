@@ -14,7 +14,7 @@ public class SoldierTower : MonoBehaviour
 
     [Header("Setup Fields")]
     public string enemyTag = "Enemy1";
-    public string bossTag = "Boss1";
+    //public string bossTag = "Boss1";
 
     public GameObject _bulletfab;
     public Transform firepoint;

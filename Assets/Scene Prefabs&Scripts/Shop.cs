@@ -7,6 +7,7 @@ public class Shop : MonoBehaviour
     public TowerBlueprint SoldierTower1;
     public TowerBlueprint TurretTower1;
     public TowerBlueprint TurretTower2;
+    public TowerBlueprint LazerTower;
     BuildManager buildManager;
     
     void Start()
@@ -27,6 +28,11 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("Turret bought");
         buildManager.SelectTowerToBuild(TurretTower2);
+    }
+    public void SelectLazerTower()
+    {
+        Debug.Log("Tower bought");
+        buildManager.SelectTowerToBuild(LazerTower);
     }
     
 
